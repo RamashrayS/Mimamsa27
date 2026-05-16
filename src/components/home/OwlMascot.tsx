@@ -69,7 +69,7 @@ export function OwlMascot() {
   return (
     <div
       id="owl-stage"
-      className="relative ml-auto flex h-[min(68vh,480px)] w-full max-w-[min(100%,440px)] items-end justify-end lg:h-[min(76vh,560px)] lg:max-w-[560px]"
+      className="relative ml-auto flex h-[min(68vh,480px)] w-full max-w-[min(100%,440px)] items-end justify-end overflow-hidden lg:h-[min(76vh,560px)] lg:max-w-[560px]"
     >
       <motion.div
         className="relative w-full"
@@ -79,7 +79,7 @@ export function OwlMascot() {
         {/* Branch */}
         <svg
           viewBox="0 0 400 120"
-          className="absolute -right-6 bottom-[26%] z-0 w-[120%] max-w-none origin-right lg:-right-10"
+          className="absolute right-0 bottom-[26%] z-0 w-[120%] max-w-none origin-right lg:right-0"
           aria-hidden
         >
           <defs>
