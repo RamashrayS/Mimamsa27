@@ -22,7 +22,7 @@ function MobileNav() {
           <li key={item.href}>
             <a
               href={item.href}
-              className="flex flex-col items-center gap-0.5 rounded-xl px-3 py-2 text-[11px] font-medium text-charcoal-soft transition active:text-deep-red"
+              className="cursor-pointer flex flex-col items-center gap-0.5 rounded-xl px-3 py-2 text-[11px] font-medium text-charcoal-soft transition active:text-deep-red"
             >
               {item.label}
             </a>

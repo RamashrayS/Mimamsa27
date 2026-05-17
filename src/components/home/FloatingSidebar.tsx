@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 
@@ -120,18 +121,17 @@ export function FloatingSidebar() {
       className="fixed left-3 top-1/2 z-50 hidden -translate-y-1/2 flex-col gap-2 sm:left-5 md:flex"
     >
       {navItems.map((item, i) => (
-        <motion.a
-          key={item.label}
-          href={item.href}
-          onHoverStart={() => setHovered(item.label)}
-          onHoverEnd={() => setHovered(null)}
-          initial={{ opacity: 0, x: -12 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ delay: 0.55 + i * 0.06, duration: 0.4 }}
-          whileHover={{ scale: 1.04 }}
-          whileTap={{ scale: 0.97 }}
-          className="group relative flex items-center"
-        >
+        <Link key={item.label} href={item.href} legacyBehavior>
+          <motion.a
+            onHoverStart={() => setHovered(item.label)}
+            onHoverEnd={() => setHovered(null)}
+            initial={{ opacity: 0, x: -12 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: 0.55 + i * 0.06, duration: 0.4 }}
+            whileHover={{ scale: 1.04 }}
+            whileTap={{ scale: 0.97 }}
+            className="cursor-pointer group relative flex items-center"
+          >
           <span
             className={`flex h-11 w-11 items-center justify-center rounded-2xl border shadow-sm backdrop-blur-md transition-all duration-300 ${
               hovered === item.label
@@ -160,6 +160,7 @@ export function FloatingSidebar() {
             )}
           </AnimatePresence>
         </motion.a>
+        </Link>
       ))}
 
       {externalNavItems.map((item, i) => (
@@ -175,7 +176,7 @@ export function FloatingSidebar() {
           transition={{ delay: 0.55 + (navItems.length + i) * 0.06, duration: 0.4 }}
           whileHover={{ scale: 1.04 }}
           whileTap={{ scale: 0.97 }}
-          className="group relative flex items-center"
+          className="cursor-pointer group relative flex items-center"
         >
           <span
             className={`flex h-11 w-11 items-center justify-center rounded-2xl border shadow-sm backdrop-blur-md transition-all duration-300 ${

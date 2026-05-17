@@ -108,7 +108,7 @@ export default function ProblemsPage() {
                     key={card.subject}
                     type="button"
                     onClick={() => setActiveIndex(index)}
-                    className={`rounded-full border px-4 py-2 text-sm font-semibold transition ${
+                    className={`cursor-pointer rounded-full border px-4 py-2 text-sm font-semibold transition ${
                       index === activeIndex
                         ? "border-crimson bg-crimson/10 text-crimson"
                         : "border-charcoal/10 bg-ivory text-charcoal hover:border-crimson/20 hover:bg-white"
@@ -140,7 +140,7 @@ export default function ProblemsPage() {
                   <button
                     type="button"
                     onClick={() => setActiveIndex(null)}
-                    className="rounded-3xl border border-charcoal/10 bg-ivory px-4 py-2 text-sm font-semibold text-charcoal transition hover:border-crimson/20 hover:text-crimson"
+                    className="cursor-pointer rounded-3xl border border-charcoal/10 bg-ivory px-4 py-2 text-sm font-semibold text-charcoal transition hover:border-crimson/20 hover:text-crimson"
                   >
                     Close
                   </button>
@@ -162,7 +162,7 @@ export default function ProblemsPage() {
                   onClick={() => setActiveIndex(index)}
                   whileHover={{ y: -4 }}
                   whileTap={{ scale: 0.98 }}
-                  className="group relative overflow-hidden rounded-[2rem] border border-charcoal/10 bg-ivory/90 p-6 text-left shadow-[0_20px_60px_-45px_rgba(15,23,42,0.35)] transition hover:border-crimson/20 hover:bg-white"
+                  className="cursor-pointer group relative overflow-hidden rounded-[2rem] border border-charcoal/10 bg-ivory/90 p-6 text-left shadow-[0_20px_60px_-45px_rgba(15,23,42,0.35)] transition hover:border-crimson/20 hover:bg-white"
                 >
                   <div className="flex items-center gap-4">
                     <div className="grid h-16 w-16 place-items-center rounded-3xl bg-crimson/10 text-3xl">

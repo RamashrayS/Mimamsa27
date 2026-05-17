@@ -12,7 +12,7 @@ export default function Mimamsa2026Page() {
         <p className="mt-6 max-w-3xl text-lg leading-relaxed text-charcoal-soft sm:text-xl">
           Relive the energy of our latest edition — problem sets, photos, and stories from teams who made it to Pune.
         </p>
-        <Link href="https://www.mimamsa.info/" className="mt-10 inline-flex rounded-2xl border border-deep-red/20 bg-ivory px-6 py-3 text-sm font-semibold text-deep-red shadow-sm transition hover:border-deep-red/40 hover:shadow-md">
+        <Link href="https://www.mimamsa.info/" className="cursor-pointer mt-10 inline-flex rounded-2xl border border-deep-red/20 bg-ivory px-6 py-3 text-sm font-semibold text-deep-red shadow-sm transition hover:border-deep-red/40 hover:shadow-md">
           Mimamsa 2026 →
         </Link>
       </div>

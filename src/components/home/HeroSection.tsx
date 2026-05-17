@@ -39,7 +39,7 @@ function EmailSignup() {
             disabled={submitted}
             whileHover={{ scale: submitted ? 1 : 1.02 }}
             whileTap={{ scale: submitted ? 1 : 0.98 }}
-            className="relative overflow-hidden rounded-2xl bg-deep-red px-6 py-3.5 text-sm font-semibold text-ivory shadow-[0_8px_28px_-6px_rgba(122,24,40,0.45)] transition hover:bg-crimson disabled:cursor-default"
+            className="relative cursor-pointer overflow-hidden rounded-2xl bg-deep-red px-6 py-3.5 text-sm font-semibold text-ivory shadow-[0_8px_28px_-6px_rgba(122,24,40,0.45)] transition hover:bg-crimson disabled:cursor-default"
           >
             <motion.span className="relative z-10" animate={submitted ? { opacity: [1, 0] } : {}}>
               {submitted ? "You're in!" : "Notify me"}
@@ -67,7 +67,7 @@ function EmailSignup() {
       <motion.a
         href="mailto:ramashray.sahu@students.iiserpune.ac.in"
         whileHover={{ x: 2 }}
-        className="mt-5 inline-flex items-center gap-1.5 text-sm font-medium text-crimson transition hover:text-deep-red"
+        className="cursor-pointer mt-5 inline-flex items-center gap-1.5 text-sm font-medium text-crimson transition hover:text-deep-red"
       >
         Interested in sponsoring us?
         <span aria-hidden className="transition group-hover:translate-x-0.5">

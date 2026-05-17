@@ -152,7 +152,7 @@ export default function WinnersPage() {
               type="button"
               onClick={() => setSelectedIndex((index) => Math.max(index - 1, 0))}
               disabled={selectedIndex === 0}
-              className="inline-flex h-12 w-12 items-center justify-center rounded-2xl border border-charcoal/10 bg-ivory text-charcoal transition hover:border-crimson/30 hover:text-crimson disabled:cursor-not-allowed disabled:opacity-40"
+              className="cursor-pointer inline-flex h-12 w-12 items-center justify-center rounded-2xl border border-charcoal/10 bg-ivory text-charcoal transition hover:border-crimson/30 hover:text-crimson disabled:cursor-not-allowed disabled:opacity-40"
               aria-label="Previous winner"
             >
               ←
@@ -186,7 +186,7 @@ export default function WinnersPage() {
               type="button"
               onClick={() => setSelectedIndex((index) => Math.min(index + 1, winners.length - 1))}
               disabled={selectedIndex === winners.length - 1}
-              className="inline-flex h-12 w-12 items-center justify-center rounded-2xl border border-charcoal/10 bg-ivory text-charcoal transition hover:border-crimson/30 hover:text-crimson disabled:cursor-not-allowed disabled:opacity-40"
+              className="cursor-pointer inline-flex h-12 w-12 items-center justify-center rounded-2xl border border-charcoal/10 bg-ivory text-charcoal transition hover:border-crimson/30 hover:text-crimson disabled:cursor-not-allowed disabled:opacity-40"
               aria-label="Next winner"
             >
               →
