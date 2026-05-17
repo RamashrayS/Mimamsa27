@@ -121,8 +121,8 @@ export function FloatingSidebar() {
       className="fixed left-3 top-1/2 z-50 hidden -translate-y-1/2 flex-col gap-2 sm:left-5 md:flex"
     >
       {navItems.map((item, i) => (
-        <Link key={item.label} href={item.href} legacyBehavior>
-          <motion.a
+        <Link key={item.label} href={item.href}>
+          <motion.div
             onHoverStart={() => setHovered(item.label)}
             onHoverEnd={() => setHovered(null)}
             initial={{ opacity: 0, x: -12 }}
@@ -159,7 +159,7 @@ export function FloatingSidebar() {
               </motion.span>
             )}
           </AnimatePresence>
-        </motion.a>
+        </motion.div>
         </Link>
       ))}
 
