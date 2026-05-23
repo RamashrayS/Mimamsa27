@@ -1,2 +1,2 @@
 Basic Mimamsa website made by me in about 3 hrs
-Website link: mimamsa2027.vercel.app
+Website link: [mimamsa2027.vercel.app](https://mimamsa2027.vercel.app/)
